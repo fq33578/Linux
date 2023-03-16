@@ -1,2 +1,8 @@
+#設定日期時間
 timedatectl set-time '2020-10-11 17:51:00'
+
+#停止NTP自動對時
 service ntpd stop
+
+# 將 myfolder 目錄複製到 /path/to/ 路徑下
+cp -r myfolder /path/to/
