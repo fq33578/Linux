@@ -7,6 +7,9 @@ service ntpd stop
 # 將 myfolder 目錄複製到 /path/to/ 路徑下
 cp -r myfolder /path/to/
 
+#強制刪除opsmgr檔案資料夾(非空資料夾)
+rm -rf opsmgr
+
 #查看資料夾占用容量大小
 du 
 -a：列出所有檔案，包含隱藏檔( 開頭為 . 的檔案)，預設只有統計目錄下的檔案數量
