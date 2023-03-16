@@ -16,3 +16,5 @@ du
 -sh:目前目錄檔案占用大小
 -ah列出所有資料夾與檔案大小
 
+# 將 myfolder 目錄壓縮成 archive.zip
+zip -r archive.zip myfolder
