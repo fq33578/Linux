@@ -24,3 +24,18 @@ zip -r archive.zip myfolder
 
 #ping IP 帶時間搓
 ping 10.46.73.16 | awk '{ print $0"\t" strftime("%H:%M:%S",systime()) } '
+
+#開/關WiFi(無線網路)
+ifconfig wlan0 up
+ifconfig wlan0 down
+
+#CentOS重啟網路
+>CentOS 6
+service network restart 
+
+or
+
+/etc/init.d/network restart
+
+>CentOS 7
+systemctl restart network
