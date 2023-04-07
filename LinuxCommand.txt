@@ -30,7 +30,7 @@ ifconfig wlan0 up
 ifconfig wlan0 down
 
 #CentOS重啟網路
->CentOS 6
+>CentOS 6(Ubuntu/Debian)
 service network restart 
 
 or
@@ -39,3 +39,10 @@ or
 
 >CentOS 7
 systemctl restart network
+
+#檔案改權限
+>全讀全寫(Error:Permission Denied)
+chmod 777 XXXX
+
+>全讀
+chmod 444 XXX
