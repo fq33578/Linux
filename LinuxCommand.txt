@@ -1,7 +1,8 @@
 #設定日期時間
 timedatectl set-time '2020-10-11 17:51:00'
 
-#停止NTP自動對時
+#啟用/停止NTP自動對時
+service ntpd start
 service ntpd stop
 
 # 將 myfolder 目錄複製到 /path/to/ 路徑下
@@ -25,7 +26,7 @@ zip -r archive.zip myfolder
 #ping IP 帶時間搓
 ping 10.46.73.16 | awk '{ print $0"\t" strftime("%H:%M:%S",systime()) } '
 
-#開/關WiFi(無線網路)
+#開/關WiFi(也可用於重啟無線網路模組)
 ifconfig wlan0 up
 ifconfig wlan0 down
 
