@@ -5,6 +5,9 @@ timedatectl set-time '2020-10-11 17:51:00'
 service ntpd start
 service ntpd stop
 
+#查看本機所有連結網卡(包含未啟用)
+ip addr 
+
 # 將 myfolder 目錄複製到 /path/to/ 路徑下
 cp -r myfolder /path/to/
 
