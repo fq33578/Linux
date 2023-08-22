@@ -8,6 +8,9 @@ service ntpd stop
 #查看本機所有連結網卡(包含未啟用)
 ip addr 
 
+#重新獲取設備UUID
+uuidgen (網卡名稱)
+
 # 將 myfolder 目錄複製到 /path/to/ 路徑下
 cp -r myfolder /path/to/
 
