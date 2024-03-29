@@ -53,3 +53,19 @@ chmod 777 XXXX
 
 >全讀
 chmod 444 XXX
+
+###ubuntu 修改IP###
+
+1. ifconfig #取得網卡名稱
+2. netplan generate #生成配置文件
+3. sudo vi /etc/netplan/01-network-manager-all.yaml#編輯文件
+4. 修改為:
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    ens32: #網卡名稱
+      addresses: [ 10.46.73.71/24 ]
+5. wq! #強制寫入保存	  
+6. netplan apply #套用設置
+ps:需注意文字縮排
